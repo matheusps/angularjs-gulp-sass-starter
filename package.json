@@ -1,0 +1,31 @@
+{
+  "name": "angularjs-gulp-sass-starter",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A simple starter project for AngularJS",
+  "repository": "https://github.com/matheusps/angularjs-gulp-sass-starter.git",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "http-server": "^0.9.0",
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "postinstall": "gulp",
+    "update-deps": "npm update",
+    "postupdate-deps": "bower update",
+    "start": "gulp && concurrently \"gulp watch-sass\" \"lite-server\" ",
+    "lite": "lite-server",
+    "compile-sass": "gulp",
+    "watch-sass": "gulp watch-sass"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2"
+  }
+}

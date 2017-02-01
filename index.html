@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Title</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/release/main.css">
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="//npmcdn.com/angular-ui-router@1.0.0-alpha.4/release/angular-ui-router.js"></script>
+</head>
+<body ng-app="app">
+
+  <div id="content">
+    <a ui-sref="example" ui-sref-active="active">Example</a>
+    <ui-view></ui-view>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+
+  <!-- Module-->
+  <script src="app/app.js"></script>
+  <script src="app/components/example-cmp/example.js"></script>
+
+</body>
+</html>
